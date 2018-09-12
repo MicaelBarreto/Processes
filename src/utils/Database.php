@@ -2,7 +2,7 @@
 class Database {
     private static $name = "job_db";
     private static $user = "root";
-    private static $password = "ironman";
+    private static $password = "7166";
     private static $host = "127.0.0.1";
     private static $port = "3306";
     private static $connection;
