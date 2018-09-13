@@ -21,111 +21,136 @@
     </script>
 </div>
 
-<div class="row">
-  <div class="col-md-5">
-  <div class="table-responsive">
-  <?php $job = JobDAO::all(); ?>
-    <table class="table table-dark table-bordered">
-        <thead class="thead-dark">
-            <tr>
-                <th colspan="2">Prioridade 1</th>
-            </tr>
-        </thead>
-        <tr>
-            <th>ID</th>
-            <th>Tempo</th>
-        </tr>
+<?php $job = JobDAO::all(); ?>
 
-        <?php 
-            foreach($job as $u) : 
-                if($u['priority']==1){
-        ?>
-        <tr>
-            <td><?= $u['id'] ?></td>
-            <td><?= $u['time'] ?></td>
-        </tr>
-        <?php
-                } 
-            endforeach 
-        
-        ?>
-    </table>
+<div class="row">
+    <div class="col-md-5">
+        <div class="table-responsive">
+  
+            <table class="table table-dark table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="2">Prioridade 1</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tempo</th>
+                </tr>
+
+                <?php 
+                    foreach($job as $u) : 
+                        if($u['priority']==1){
+                ?>
+                <tr>
+                    <td><?= $u['id'] ?></td>
+                    <td><?= $u['time'] ?></td>
+                </tr>
+                <?php
+                        } 
+                    endforeach 
+                
+                ?>
+            </table>
+        </div>
     </div>
-  </div>
 </div>
     
-    <table class="table table-dark table-bordered">
-        <thead class="thead-dark">
-            <tr class="row">
-                <th colspan="2" class="col-xs-1">Prioridade 2</th>
-            </tr>
-        </thead>
-        <tr class="row">
-            <th class="col-xs-1">ID</th>
-            <th class="col-xs-1">Tempo</th>
-        </tr>
+<div class="row">
+    <div class="col-md-5">
+        <div class="table-responsive">
 
-        <?php 
-            foreach($job as $u) : 
-                if($u['priority']==2){
-        ?>
-        <tr class="row">
-            <td class="col-xs-1"><?= $u['id'] ?></td>
-            <td class="col-xs-1"><?= $u['time'] ?></td>
-        </tr>
-        <?php
-                } 
-            endforeach 
-        
-        ?>
-    </table>
-    <table class="table table-dark table-bordered">
-        <thead class="thead-dark">
-            <tr class="row">
-                <th colspan="2" class="col-xs-1">Prioridade 3</th>
-            </tr>
-        </thead>
-        <tr class="row">
-            <th class="col-xs-1">ID</th>
-            <th class="col-xs-1">Tempo</th>
-        </tr>
+            <table class="table table-dark table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="2">Prioridade 2</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tempo</th>
+                </tr>
 
-        <?php 
-            foreach($job as $u) : 
-                if($u['priority']==3){
-        ?>
-        <tr class="row">
-            <td class="col-xs-1"><?= $u['id'] ?></td>
-            <td class="col-xs-1"><?= $u['time'] ?></td>
-        </tr>
-        <?php
-                } 
-            endforeach 
-        
-        ?>
-    </table>
-    <table class="table table-dark table-bordered">
-        <thead class="thead-dark">
-            <tr class="row">
-                <th colspan="2" class="col-xs-1">Prioridade 4</th>
-            </tr>
-        </thead>
-        <tr class="row">
-            <th class="col-xs-1">ID</th>
-            <th class="col-xs-1">Tempo</th>
-        </tr>
+                <?php 
+                    foreach($job as $u) : 
+                        if($u['priority']==2){
+                ?>
+                <tr>
+                    <td><?= $u['id'] ?></td>
+                    <td><?= $u['time'] ?></td>
+                </tr>
+                <?php
+                        } 
+                    endforeach 
+                
+                ?>
+            </table>
+        </div>
+    </div>
+</div>
 
-        <?php 
-            foreach($job as $u) : 
-                if($u['priority']==4){
-        ?>
-        <tr class="row">
-            <td class="col-xs-1"><?= $u['id'] ?></td>
-            <td class="col-xs-1"><?= $u['time'] ?></td>
-        </tr>
-        <?php
-                } 
-            endforeach 
-        
-        ?>
-    </table>
+<div class="row">
+    <div class="col-md-5">
+        <div class="table-responsive">
+
+        <table class="table table-dark table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th colspan="2">Prioridade 3</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>ID</th>
+                <th>Tempo</th>
+            </tr>
+
+            <?php 
+                foreach($job as $u) : 
+                    if($u['priority']==3){
+            ?>
+            <tr>
+                <td><?= $u['id'] ?></td>
+                <td><?= $u['time'] ?></td>
+            </tr>
+            <?php
+                    } 
+                endforeach 
+            
+            ?>
+        </table>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <div class="table-responsive">
+
+        <table class="table table-dark table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th colspan="2">Prioridade 4</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>ID</th>
+                <th>Tempo</th>
+            </tr>
+
+            <?php 
+                foreach($job as $u) : 
+                    if($u['priority']==4){
+            ?>
+            <tr>
+                <td><?= $u['id'] ?></td>
+                <td><?= $u['time'] ?></td>
+            </tr>
+            <?php
+                    } 
+                endforeach 
+            
+            ?>
+        </table>
+        </div>
+    </div>
+</div>
