@@ -12,7 +12,7 @@
 
         public static function all() {
             $db = Database::getConnection();
-            $stmt = $db->prepare('SELECT * FROM jobs');
+            $stmt = $db->prepare('SELECT * FROM job');
             $stmt->execute();
             return $stmt->fetchAll();
         
@@ -22,7 +22,7 @@
         public static function take($job) {
             $db = Database::getConnection();
             
-            $stmt = $db->prepare('SELECT * FROM jobs where  id= :id');
+            $stmt = $db->prepare('SELECT * FROM job where  id= :id');
             $stmt->execute(array(
                     ':id' => $job->getId()
             ));
